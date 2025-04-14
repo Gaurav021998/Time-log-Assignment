@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Log Time">
+        <div class="slds-p-around_medium">
+            
+            <lightning-combobox
+                name="project"
+                label="Project"
+                value={selectedProject}
+                options={projectOptions}
+                onchange={handleProjectChange}>
+            </lightning-combobox>
+
+            
+            <lightning-input
+                name="logDate"
+                label="Log Date"
+                type="date"
+                value={logDate}
+                onchange={handleDateChange}>
+            </lightning-input>
+
+        
+            <lightning-input
+                name="hoursWorked"
+                label="Hours Worked"
+                type="number"
+                value={hoursWorked}
+                min="0"
+                max="8"
+                onchange={handleHoursChange}>
+            </lightning-input>
+
+        
+            <lightning-button
+                label="Log Time"
+                onclick={handleSubmit}
+                class="slds-m-top_medium">
+            </lightning-button>
+
+        
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error slds-m-top_medium">{errorMessage}</div>
+            </template>
+
+        
+            <template if:true={successMessage}>
+                <div class="slds-text-color_success slds-m-top_medium">{successMessage}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

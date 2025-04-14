@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>TimeLogHandler</members>
+        <members>TimeLogHandlerTest</members>
+        <members>TimeLogMonitor</members>
+        <members>TimeLogMonitorTest</members>
+        <members>TimeLogReminder</members>
+        <members>TimeLogTrigger</members>
+        <members>TimeTrackingController</members>
+        <members>TimeTrackingControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>timeLogForm</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>52.0</version>
+</Package>
